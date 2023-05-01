@@ -11,22 +11,19 @@
 </head>
 
 <body>
-    <nav class="navbar section">
-        <div class="brand-logo">
-            <a href="index.html"> <img src="images/nav_logo.png" alt="compant logo"></a>
+    <nav class="navbar">
+        <div class="brandlogo">
+            <a href="index.html"><img src="images/nav_logo.png" alt=""></a>
         </div>
-        <a  class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#" class="nav-item">OUR CLIENTS</a></li>
-                <li><a href="#" class="nav-item">ABOUT</a></li>
-                <li><a href="#" class="nav-item">CONTACT</a></li>
-            </ul>
-        </div>
+        <label  class="hamburger">
+            <input type="checkbox" data-hamburger-menu-toggle>
+        </label>
+        
+        <ul class="nav-links" data-navbar-links>
+            <li data-navbrar-link><a href="#">OUR CLIENTS</a></li>
+            <li data-navbrar-link><a href="#">ABOUT</a></li>
+            <li data-navbrar-link><a href="#">CONTACT</a></li>
+        </ul>
     </nav>
     <section class="hero-section">
         <div class="hero-text">
@@ -35,7 +32,7 @@
                 disruptive techniques through outstanding content
                 prodiction, effective community management, paid socila
                 advertizing, influencer marketing, and more.</p>
-            <a href="#" class="button">
+            <a href="#contact-us" data-contact-link class="button">
                 Contact Us
             </a>
         </div>
@@ -74,7 +71,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us" data-contact-section>
         <h2>Contact Us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Suspendisse varius enim in eros elementum tristique. Duis
